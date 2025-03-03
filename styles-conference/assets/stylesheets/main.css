@@ -90,22 +90,40 @@ h1,h3,h4,h5,p {
 
 /*
 ============================================
+Leads
+============================================
+*/
+.lead {
+	text-align: center;
+}
+.lead p {
+	font-size: 21px;
+	line-height: 33px;
+}
+
+
+/*
+============================================
 Buttons
 ============================================
 */
 .btn {
 	border-radius: 5px;
-	display: inline-block;
-	margin: 0;
-}
-.btn-alt {
-	border: 1px solid #dfe2e5;
-	padding: 10px 30px;
 	color: #fff;
 	cursor: pointer;
 	font-weight: 400;
 	letter-spacing: .5px;
 	text-transform: uppercase;
+	display: inline-block;
+	margin: 0;
+}
+.btn-alt {
+	border: 1px solid #dfe2e5;
+	padding: 10px 30px; 
+}
+.btn-alt:hover {
+	background: #fff;
+	color: #648880;
 }
 
 /*
@@ -125,6 +143,7 @@ Home
 .hero p {
 	font-size: 24px;
 	font-weight: 100;
+	color: #fff;
 }
 
 /*
@@ -143,6 +162,28 @@ Clearfix
 .group {
 	clear: both;
 }
+
+/*
+============================================
+Rows
+============================================
+*/
+.row,
+.row-alt {
+	min-width: 960px;
+}
+.row {
+	background: #fff;
+	padding: 66px 0 44px 0;
+}
+.row-alt {
+	background: #cbe2c1;
+	background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+	background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+	background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+	padding: 44px 0 22px 0;
+}
+
 
 /*
 ============================================
@@ -242,6 +283,13 @@ cite, em {
 .teaser a h3:hover {
 	color: #a9b2b9;
 }
+.teaser img {
+	border-radius: 5px;
+	display: block;
+	margin-bottom: 22px;
+	max-width: 100%;
+
+}
 a:hover {
 	color: #a9b2b9;
 }
@@ -259,8 +307,27 @@ a {
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 }
-p a {
-	border-bottom: 10px solid black;
+
+/*
+============================================
+Speaker page styles
+============================================
+*/
+.speaker-info {
+	border: 1px solid #dfe2e5;
+	border-radius: 5px;
+	margin-top: 88px;
+	padding-bottom: 22px;
+	text-align: center;
+}
+.speaker {
+	margin-bottom: 44px;
+}
+.speaker-info img {
+	border-radius: 50%;
+	height: 130px;
+	margin: -66px 0 22px 0;
+	vertical-align: top;
 }
 
 /*
@@ -270,4 +337,12 @@ Navigation
 */
 .nav {
 	text-align: right;
+}
+.nav li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+.nav li:last-child {
+	margin-right: 0;
 }
